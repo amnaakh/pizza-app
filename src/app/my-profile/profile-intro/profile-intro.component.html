@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6 d-flex">
+      <mat-card class="trinta-card profile-intro-card mb-25 bg-white border-none d-block flex-grow-1">
+        <mat-card-header>
+          <mat-card-title>
+            <h5 class="mt-0 mb-0">
+              User Profile
+            </h5>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="user text-center">
+            <img src="assets/images/user.PNG" class="rounded-circle" alt="user-image">
+            <h5>
+              Adam K
+            </h5>
+            <h5> Administrator </h5>
+            <h5> Has staff bank: No </h5>
+          </div>
+          <div class="buttons-list d-flex align-items-center justify-content-between">
+            <a routerLink="/settings/change-password" class="default-btn" mat-button>
+              Change password
+            </a>
+            <a href="mailto:demo@contact.com" class="default-btn" mat-button>
+              Message
+            </a>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+    <div class="col-md-6 d-flex">
+      <mat-card class="trinta-card profile-intro-card mb-25 bg-white border-none d-block flex-grow-1">
+        <mat-card-header>
+          <mat-card-title>
+            <h5 class="mt-0 mb-0">
+              Attendance
+            </h5>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="row">
+
+
+            
+
+            <div class="col-6 text-left">
+              <h6>Current shift <p>Regular</p>
+              </h6>
+            </div>
+
+
+            <div class="col-6 d-flex justify-content-end">
+              <div class="text-right">
+                <h6 *ngIf="clockInTime">Clock In Time <p>{{ clockInTime }}</p>
+                </h6>
+                <h6 *ngIf="clockOutTime">Clocked Out Time <p>{{ clockOutTime }}</p>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5" style="margin-top: 9%;margin-right: 0%;">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="text-center">
+                <h6>Status : <p>{{ status }}</p>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5" style="margin-top: 9%;margin-right: 0%;">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="text-center">
+                <h6>Store open Since <p>{{ clockInTime }}</p>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons-list d-flex justify-content-center">
+            <a (click)="setClockInTime()" class="default-btn" mat-button>
+              {{ buttonText }}
+            </a>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
