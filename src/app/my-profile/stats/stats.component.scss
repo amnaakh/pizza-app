@@ -11,7 +11,7 @@
                 margin-bottom: 30px;
                 border-radius: 12.718px;
                 background-color: var(--primaryColor);
-                
+
                 i-feather {
                     width: 32px;
                     height: 32px;
@@ -183,3 +183,68 @@
 
 /* Min width 1600px */
 @media only screen and (min-width: 1600px) {}
+
+.exit-button-container {
+  width: 100%;
+}
+
+.exit-button-card {
+}
+
+.icon {
+  background-color: rgb(233, 0, 0); /* Fond rouge */
+  width: 100%; /* S'étend sur toute la largeur de la page */
+  border-radius: 15px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  color: white; /* Couleur du texte en blanc */
+  text-align: center; /* Centrer le texte */
+  box-sizing: border-box;
+  /* Ajoutez ici vos styles spécifiques pour l'icône */
+}
+
+.text-gray {
+  font-weight: bold; /* Texte en gras */
+  color: rgb(0, 0, 0); /* Couleur du texte en noir */
+  text-align: center; /* Centrer le texte */
+  font-size: 25px; /* Taille de texte grande */
+  font-family: poppins;
+  display: inline-block; /* Assurez que l'élément est en ligne pour centrer correctement */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les colonnes horizontalement */
+}
+
+.col-xxxl-2,
+.col-sm-6,
+.col-md-4 {
+  margin-bottom: 20px; /* Espacement entre les boutons */
+  display: flex;
+  justify-content: center; /* Centrer les boutons horizontalement */
+}
+
+button {
+  width: 100%; /* Remplir la largeur de la colonne */
+  max-width: 250px; /* Largeur maximale des boutons */
+  padding: 10px 20px;
+  border: none;
+  background-color: #e0e0e0; /* Couleur de fond des boutons */
+  color: rgb(231, 231, 231); /* Couleur du texte */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a8ccff; /* Changement de couleur au survol */
+}
+
+.icon {
+  display: flex;
+  justify-content: center; /* Centrer le texte "Exit" */
+  margin-top: 20px; /* Espacement du texte "Exit" */
+}
+
+
