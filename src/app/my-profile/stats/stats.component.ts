@@ -10,4 +10,11 @@ import { FeathericonsModule } from '../../icons/feathericons/feathericons.module
     templateUrl: './stats.component.html',
     styleUrl: './stats.component.scss'
 })
-export class StatsComponent {}
+export class StatsComponent {
+
+  constructor() { }
+
+  showDeclareTips() {
+    // Logique pour afficher les détails des déclarations de pourboires
+  }
+}
